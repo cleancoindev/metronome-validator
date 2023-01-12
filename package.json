@@ -15,7 +15,9 @@
     "metec2": "./node_modules/.bin/metec2",
     "test": "./node_modules/.bin/eslint *.js",
     "test:e2e": "./node_modules/.bin/mocha ./test/testExportImport.js --timeout 100000 --exit",
-    "test:validateHash": "./node_modules/.bin/mocha ./test/testValidateHash.js --timeout 100000 --exit"
+    "test:validateHash": "./node_modules/.bin/mocha ./test/testValidateHash.js --timeout 100000 --exit",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "",
   "license": "MIT",
@@ -38,22 +40,24 @@
     "config": "^2.0.1",
     "cron": "^1.4.1",
     "dotenv": "^6.2.0",
-    "ethers": "^4.0.7",
+    "ethers": "^4.0.49",
     "ethjs-abi": "^0.2.1",
     "inquirer": "^6.4.1",
-    "lerna": "^3.8.5",
-    "lodash": "^4.17.10",
+    "lerna": "^5.5.2",
+    "lodash": "^4.17.21",
     "merkletreejs": "0.0.9",
     "metronome-contracts": "2.4.0",
-    "metronome-parity-nodes": "1.0.2",
+    "metronome-parity-nodes": "1.0.3",
     "newrelic": "^4.9.0",
-    "redis": "^2.8.0",
-    "truffle-hdwallet-provider": "^1.0.4",
+    "redis": "^3.1.1",
+    "truffle-hdwallet-provider": "^1.0.15",
     "typedarray-to-buffer": "^3.1.5",
-    "web3": "1.0.0-beta.37",
+    "web3": "1.7.5",
     "websocket-reconnector": "^1.1.1",
     "winston": "^3.2.1",
     "winston-papertrail": "^1.0.5",
-    "yaeti": "^1.0.2"
-  }
+    "yaeti": "^1.0.2",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
